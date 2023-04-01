@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}" />
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css.css')}}" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<style>
+body
+{
+background-image:url({{url_for('static',filename='Sathyabama Image.jpg')}})
+}
+
+.form-wrapper
+{
+position:absolute;
+width:700px;
+height:480px;
+
+top:0%;
+right:1%;
+
+
+padding:10px;
+
+obacity:0.7;
+}
+</style>
+
+<body style="background-color:white;">
+<h1><marquee>***** Sathyabama Deemed University *****</marquee></h1>
+ 
+
+	<!--<img src="{{url_for('static',filename='2.webp')}}" alt="" height="900" width="1200">-->
+    <div class="row">
+            
+    <form>
+	<div class="form-wrapper">
+        <div id="chatbox">
+            <div class="col-md-8 ml-auto mr-auto">
+                <p class="botText"><span>"Hello", Welcome to Sathyabama ChatBot. How can I help you?</b></span></p>
+            </div>
+        </div>
+        <div id="userInput" class="row">
+            <div class="col-md-10">
+                <div><b><input id="text" type="text" name="msg" placeholder="Start your Chat here" class="form-control"style="position:relative; right:90px;"></b>
+				<div><button type="submit" id="send" class="btn btn-warning" style="position:relative; right:90px; top:10px;"><b>SUBMIT</b></button></div>	
+				
+			</div>
+        </div>
+		</div>
+    </form
+
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("form").on("submit", function(event) {
+            var rawText = $("#text").val();
+            var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+            $("#text").val("");
+            $("#chatbox").append(userHtml);
+            document.getElementById("userInput").scrollIntoView({
+                block: "start",
+                behavior: "smooth",
+            });
+            $.ajax({
+                data: {
+                    msg: rawText,
+                },
+                type: "POST",
+                url: "/get",
+            }).done(function(data) {
+				let datalink=data
+				let start= datalink.search("https://");
+				let end=datalink.search("  ");
+				let text=data.slice(start,end);
+				if (start!==0){
+				let start_text=data.slice(0,start)
+				let end_text=data.slice(end,)
+				var botHtml='<p class="botText"><span>'+start_text+'<a href="'+text+'">'+text+"</a>"+end_text+"</span></p>";}
+				else{
+                var botHtml = '<p class="botText"> <span><a href="'+text+'">' + data +"</a></span></p>";}
+                $("#chatbox").append($.parseHTML(botHtml));
+                document.getElementById("userInput").scrollIntoView({
+                    block: "start",
+                    behavior: "smooth",
+                });
+            });
+            event.preventDefault();
+        });
+    });
+</script>
+</body>
+
+</html>

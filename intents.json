@@ -1,0 +1,179 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": [ "Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day" ],
+			"responses": [ "Good to see you again", "Hi there, how can I help?" ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "Academic Calender",
+			"patterns": [ "Academic Calender", "academic calender", "holidays" ],
+			"responses": [ " You can download the academic calender by visiting our website. Website Link: https://www.sathyabama.ac.in/student/academic-calendar " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "hours",
+			"patterns": [ "What hours are you open?", "What are your hours?", "When are you open?" ],
+			"responses": [ "We're open every day 9am-3pm", "Our hours are 9am-3pm every day" ]
+		},
+		{
+			"tag": "goodbye",
+			"patterns": [ "Bye", "See you later", "Goodbye" ],
+			"responses": [
+				"See you later, thanks for visiting",
+				"Have a nice day",
+				"Bye! Come back again soon."
+			]
+		},
+		{
+			"tag": "payments",
+			"patterns": [ "payment details", "Payment Details" ],
+			"responses": [ "We accept most major credit cards, You can vist our fees portal, there you can find the payment details. Portal Link: https://fees.sathyabama.ac.in/tutionfees_home.php" ]
+		},
+		{
+			"tag": "thanks",
+			"patterns": [ "Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me" ],
+			"responses": [ "Happy to help!", "Any time!", "My pleasure" ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "options",
+			"patterns": [ "How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered" ],
+			"responses": [
+				"I can answer to low-intermediate questions regarding college",
+				"You can ask me questions regarding college, and i will try to answer them"
+			],
+			"context": [ "" ]
+		},
+		{
+			"tag": "Syllabus",
+			"patterns": [ "Syllabus", "syllabus" ],
+			"responses": [ "We cover almost all new technologies. Refer to the link for detailed information. https://www.sathyabama.ac.in/academics/curriculum-syllabus  " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "Programs We offer",
+			"patterns": [ "Programs We Offer", "programs we offer" ],
+			"responses": [ "We offer programs in various sections Please go ahead in link. https://www.sathyabama.ac.in/admissions/programs-offered  " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "Students Portal",
+			"patterns": [ "Students Portal", "students portal", "ERP" ],
+			"responses": [ "Students can use ERP portal by log in through. https://erp.sathyabama.ac.in/account/login?returnUrl=%2F  " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "notices",
+			"patterns": [ "Notices", "notices", "notice" ],
+			"responses": [ "Here you can find recent announcement. https://www.sathyabama.ac.in/research/announcements  " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "exam time table",
+			"patterns": [ "Exam Timetable", "exam timetable", "exam time table", "Exam Time Table" ],
+			"responses": [ "Examination Timings: Forenoon: 09:30 am to 12:30 pm, Afternoon: 1:00 am to 04:00pm. You can se the Exam timetable here. https://www.sathyabama.ac.in/academics/time_table  " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "exam result",
+			"patterns": [ "Exam Result", "exam result" ],
+			"responses": [ "You can see your exam results in you ERP portal as well as the following link. https://sist.sathyabama.ac.in/sist_ese_oct-nov_2022/login.php  for clarifications regarding the results, please MAIL TO - coe@sathyabama.ac.in , with details of your Name, Register Number, and Query." ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "placements",
+			"patterns": [ "Placements", "placements" ],
+			"responses": [ "General Instructions about the placements. Read here. https://www.sathyabama.ac.in/placement/placement-guidelines  " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "LMS",
+			"patterns": [ "lms", "LMS" ],
+			"responses": [ "To access Sathyabama LMS, students and faculty members need to log in using their credentials provided by the institution. Once logged in, users can navigate to their respective courses and access the course materials and resources. https://sathyabama.cognibot.in/ " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "Entrance Exam",
+			"patterns": [ "SAEEE", "saee", "SAEEE details" ],
+			"responses": [ "SAEEE may refer to the Sathyabama All India Engineering Entrance Examination, which is a national level entrance exam conducted by the Sathyabama Institute of Science and Technology for admission to undergraduate engineering courses. https://www.sathyabama.ac.in/SAEEE2023  " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "Our Recruiters",
+			"patterns": [ "Our Recruiters", "our recruiters" ],
+			"responses": [ "We are providing high-level recruitement for the past few years. To know & to be included join at. https://www.sathyabama.ac.in/placements/recruitments  " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "Placement Statistics",
+			"patterns": [ "placement statistics", "Placement Statistics" ],
+			"responses": [ "The University recorded a 92.64% hiring rate during placements in 2022. However, a placement rate of 91.73% was recorded in 2021." ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "Campus Life",
+			"patterns": [ "Campus life", "Life at sathyabama" ],
+			"responses": [ "Every incident of a LIFE is an inspiration. Every decision of LIFE leads to a destination. It is an OPPORTUNITY to live to the fullest. We need best platforms to CELEBRATE LIFE at every stage. Experiencing those platforms happens with CHOICES, Sathyabama is the best choice to a student for the celebration of LEARNING.,Read more: https://www.sathyabama.ac.in/campus-life "],
+			"context": [ "" ]
+		},
+		{
+			"tag": "class allocation",
+			"patterns": [ "Class Allocation", "class allocation", "Block allocation", "block allocation" ],
+			"responses": [ "Updated list for class allocation https://sist.sathyabama.ac.in/website/2021/Class%20Room%20Allotment%20-%2020.09.2021.pdf  " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "Admission",
+			"patterns": [ "Admission", "admission" ],
+			"responses": [ "Sathyabama is a prestigious institution which excels in the fields of Engineering, Science and  Technology for more than three successful decades. It offers multi-disciplinary academic programmes in various fields of Engineering, Science, Technology, law, Dental Science, Pharmacy, Nursing, Management, Arts and Science and Allied Health Sciences. https://www.sathyabama.ac.in/admissions "],
+			"context": [ "" ]
+		},
+		{
+			"tag": "Libary",
+			"patterns": [ "Libary", "libary" ],
+			"responses": [ "With the fast growing collection, both in digital and print forms using the state-of-the-art facilities, the Central library is contributing at an higher extent to provide a world class academic institute. https://www.sathyabama.ac.in/academics/library  " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "Mail Ids",
+			"patterns": [ "Mail Ids", "mail ids", "mail id", "mail" ],
+			"responses": [ "Admission query - admissions@sathyabama.ac.in , Placement query - sathyabamaplacement@gmail.com , Help Desk - studenthelpdesk@sathyabama.ac.in , furthermore - https://www.sathyabama.ac.in/contactus  " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "staff details",
+			"patterns": [ "Staff Details", "Faculty Details", "faculty details", "staff details", "Faculty/Staff Details", "faculty/staff details" ],
+			"responses": [ "https://www.sathyabama.ac.in/faculty  " ],
+			"context": [ "" ]
+		},
+		{
+			"tag": "swear",
+			"patterns": [
+				"shut up",
+				"hell",
+				"stupid",
+				"idiot"
+			],
+			"responses": [
+				"please use appropriate language",
+				"Maintaining decency would be appreciated"
+			],
+			"context": [ "" ]
+		},
+		{
+			"tag": "random",
+			"patterns": [
+
+				"I love you",
+				"Will you marry me",
+				"Do you love me"
+			],
+			"responses": [
+				"I am not programed for this please ask appropriate query"
+			],
+			"context": [ "" ]
+		}
+	]
+}
